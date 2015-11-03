@@ -7,20 +7,32 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: white;
 }
 
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: white;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
   border: 1px solid #fff;
 }
 
 
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar {
+  background-color: black;
+  border: none;
+}
 /*
  * Base structure
  */
@@ -29,15 +41,13 @@ html,
 body {
   height: 100%;
   background-image: url("http://i.imgur.com/mNKlWpR.jpg");
-  background-color: #333;
   background-size:cover;
   background-repeat: no-repeat;
   background-position:center;
 }
 body {
-  color: #fff;
+  background-color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -68,7 +78,29 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+  background-color: #ffffff;
+  color: #333;
+}
+
+.featurette-lead {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+
+.featurette-lead p {
+ color: black;
+
+}
+
+.lead {
+  color: #fff;
+}
+
+.cover-heading {
+  color: #fff
 }
 
 /* Thin out the marketing headings */
@@ -76,9 +108,13 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+  color: #333;
+  margin-top: 50px;
 }
 
-
+.donesec{
+  background-color: #d7d7d7;
+}
 
 /*
  * Header
@@ -86,6 +122,7 @@ body {
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .masthead-nav > li {
@@ -105,6 +142,7 @@ body {
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
+  color:white;
   background-color: transparent;
   border-bottom-color: #a9a9a9;
   border-bottom-color: rgba(255,255,255,.25);
@@ -112,7 +150,7 @@ body {
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #fff;
+  color: white;
   border-bottom-color: #fff;
 }
 
@@ -130,6 +168,7 @@ body {
  * Cover
  */
 
+
 .cover {
   padding: 0 20px;
 }
@@ -146,6 +185,18 @@ body {
    width: 100%;
    left: 0;
    position: absolute;
+   color: white;
+ }
+
+ .done {
+   background-color: #ffffff;
+   width: 100%;
+   font-size: 36px;
+   left: 0;
+   position: absolute;
+   color: black;
+   margin-top: 30px;
+   margin-bottom: 10px;
  }
 
 /*
